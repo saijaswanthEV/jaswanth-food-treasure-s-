@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.pexels.com/photos/3167412/pexels-photo-3167412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image path */
+    background-size: cover; /* Makes the image cover the whole background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo Styling */
+.logo {
+    width: 150px;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #ff6f61;
+    padding: 30px 20px;
+    color: white;
+    border-bottom: 4px solid #ff5722;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* About Section */
+.about, .about-me {
+    text-align: center;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.about h2, .about-me h2 {
+    color: #ff5722;
+}
+
+.about p, .about-me p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Centering and Border for City, Area, and Restaurant Sections */
+.city-area-food, .area-list, #restaurant-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+    padding: 20px;
+    border: 2px solid #ff6f61;
+    border-radius: 12px;
+    max-width: 800px;
+    background-color: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.city-list, .area-list, .restaurant-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Buttons for cities and areas */
+.city-btn, .area-btn {
+    background-color: #ff5722;
+    color: white;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.city-btn:hover, .area-btn:hover {
+    background-color: #ff6f61;
+    transform: scale(1.05);
+}
+
+/* Restaurant Card Styling */
+.restaurant {
+    background: #ffffff;
+    margin: 20px;
+    padding: 15px;
+    width: 280px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.restaurant:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant img {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ff5722;
+}
+
+.restaurant h4 {
+    font-size: 1.5rem;
+    color: #ff5722;
+    margin: 10px 0;
+}
+
+.restaurant p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Rating System */
+.rating {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.star {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ff5722;
+}
+
+.average-rating {
+    margin-left: 10px;
+}
+
+/* Best Menu Styling */
+.menu-card {
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 8px;
+}
+
+/* Review Section Styling */
+.review-section {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.review-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    resize: none;
+}
+
+.review-section .submit-review {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-section .submit-review:hover {
+    background-color: #e64a19;
+}
+
+/* Reviews Display */
+.reviews-display {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Review Item Styling */
+.review-item {
+    background-color: #f9f9f9;
+    border-left: 5px solid #ff5722;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

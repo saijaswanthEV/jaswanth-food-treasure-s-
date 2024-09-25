@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Food Treasure - For Food Lovers</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javacode.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Food Treasure Logo" class="logo">
+        <h1>Food Treasure</h1>
+        <p class="tagline">For Food Lovers</p>
+    </header>
+
+    <section class="about">
+        <h2>About Food Treasure</h2>
+        <p>Welcome to <strong>Food Treasure</strong>, your guide to the best food across different cities. Select a city, choose an area, and discover the top restaurants and dishes, complete with images and location details.</p>
+    </section>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>Hi! I'm [Your Name], a food enthusiast and blogger who loves to explore new flavors and culinary experiences. Join me on my journey to discover the best dishes and hidden gems in the food world!</p>
+    </section>
+
+    <section class="city-area-food">
+        <h2>Select Your City</h2>
+        <div class="city-list">
+            <button class="city-btn" onclick="showAreas('nyc')">New York</button>
+            <button class="city-btn" onclick="showAreas('la')">Los Angeles</button>
+            <button class="city-btn" onclick="showAreas('chi')">Chicago</button>
+        </div>
+
+        <div id="nyc" class="area-list" style="display:none;">
+            <h3>Areas in New York</h3>
+            <button class="area-btn" onclick="showRestaurants('nyc-manhattan')">Manhattan</button>
+            <button class="area-btn" onclick="showRestaurants('nyc-brooklyn')">Brooklyn</button>
+        </div>
+
+        <div id="la" class="area-list" style="display:none;">
+            <h3>Areas in Los Angeles</h3>
+            <button class="area-btn" onclick="showRestaurants('la-hollywood')">Hollywood</button>
+            <button class="area-btn" onclick="showRestaurants('la-santamonica')">Santa Monica</button>
+        </div>
+
+        <div id="chi" class="area-list" style="display:none;">
+            <h3>Areas in Chicago</h3>
+            <button class="area-btn" onclick="showRestaurants('chi-downtown')">Downtown</button>
+            <button class="area-btn" onclick="showRestaurants('chi-lincolnpark')">Lincoln Park</button>
+        </div>
+
+        <section id="restaurant-display" style="display:none;">
+            <h2>Restaurants and Dishes</h2>
+
+            <div id="nyc-manhattan" class="restaurant-list" style="display:none;">
+                <h3>Burgers</h3>
+                <div class="restaurant">
+                    <h4>Burger Paradise</h4>
+                    <img src="images/burger.jpg" alt="Juicy Burger">
+                    <p><strong>Dish:</strong> Juicy Burger</p>
+                    <p><strong>Address:</strong> 123 Main St, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-burger')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://www.google.com/maps/place/Burger+Paradise" target="_blank">View on Google Maps</a>
+                    <h4>Best Menu</h4>
+                    <img src="images/menu-fast-bites.jpg" alt="Menu Card" class="menu-card">
+                    <p>Check out our best menu items!</p>
+
+                    <h4>Reviews</h4>
+                    <div class="review-section">
+                        <textarea placeholder="Leave a review..." rows="3"></textarea>
+                        <button class="submit-review">Submit</button>
+                        <div class="reviews-display"></div>
+                    </div>
+                </div>
+
+                <h3>Pizzas</h3>
+                <div class="restaurant">
+                    <h4>Midtown Pies</h4>
+                    <img src="images/pizza.jpg" alt="Pepperoni Pizza">
+                    <p><strong>Dish:</strong> Pepperoni Pizza</p>
+                    <p><strong>Address:</strong> 456 Broadway, Manhattan</p>
+                    <div class="rating" data-rating="0">
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="star" onclick="rateRestaurant(this, 'nyc-manhattan-pizza')">★</span>
+                        <span class="average-rating">Rating: <span class="average">0</span></span>
+                    </div>
+                    <a href="https://goo.gl/maps/example" target="_blank">View on Google Maps</a>
+                </div>
+            </div>
+
+            <!-- Additional areas can be added similarly -->
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Food Treasure. All rights reserved.</p>
+    </footer>
+
+
+</body>
+</html>
